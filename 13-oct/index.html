@@ -5,24 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book App using React CDN</title>
     <style>
-        .card{
-            background-color: gold;
-            color: white;
-            border: 2px solid green;
-            width: 200px;
-            height: 200px;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Logo section */
+        .header {
+            display: flex;
+            display-direction:column,
+            align-items: center;
             padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .header img {
+            width: 50vh;
+            height: 80px;
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: red;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            padding: 15px 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        nav ul li:hover {
+            background-color: darkred;
+        }
+
+        /* Last image styling */
+        .footer-image {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .footer-image img {
+            max-width: 80%;
+            height: auto;
             border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <h1><center>BOOK STORE</center></h1>
-    <div id="root">
 
+    <!-- Logo Section -->
+    <div class="header">
+        <img src="https://www.abes.ac.in/assets/Logo.png" alt="Logo">
+        <div>
+            <h3>College Code - 032</h3>
+        </div>
     </div>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="index.js"></script>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Admission</li>
+            <li>Gallery</li>
+            <li>Words</li>
+            <li>Events</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+
+    <!-- Last Image -->
+    <div class="footer-image">
+        <img src="https://imgs.search.brave.com/H-dWbtWWUpKgQiaG2SroY362__u7Z7EPmV3qgMrjXMU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YnJhbmRmZXRjaC5p/by9pZFhtcHRhYVB4/L3cvMjIxL2gvODAv/dGhlbWUvbGlnaHQv/bG9nby5wbmc_Yz0x/YnhpZDY0TXVwN2Fj/emV3U0FZTVgmdD0x/NzQxNzM1NTI0MjAx" alt="Footer Image">
+    </div>
+
 </body>
 </html>
